@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+  <head>
+    <title>A story of the street</title>
+    <link rel="shortcut icon" href="streeticon.png">
+    <style>
+
+    #city{
+      position:fixed;
+      top:0px;
+      right:0px;
+      width:1024px;
+      opacity:0.5;
+      /* animation: mymove 5s infinite; */
+      }
+    #streetspeaks{
+      position:absolute;
+      color:rgb(0, 0, 0);
+      background-color:9904d;
+      /* text-shadow: 1px 3px 10px black; */
+      border:1px solid black;
+      width: 800px;
+      left:30px;
+      top:80px;
+      font-size:14px;
+      font-family:'Roboto', sans-serif;
+      text-align: left;
+    }
+    #pricetagthecity{
+      position:absolute;
+      color:rgb(0, 0, 0);
+      background-color:9904d;
+      /* text-shadow: 1px 3px 10px black; */
+      border:1px solid black;
+      border-radius:0px 50px 50px 0px;
+      width: 800px;
+      left:30px;
+      top:600px;
+      font-size:14px;
+      font-family:'Roboto', sans-serif;
+      text-align: left;
+    }
+    #question{
+      position:fixed;
+      color:rgb(0, 0, 0);
+      background-color: solid white;
+      /* text-shadow: 1px 3px 10px black; */
+      border:3px solid black;
+      border-style: dotted;
+      width: 300px;
+      right:100px;
+      top:80px;
+      font-size:50px;
+      font-family:'Roboto', sans-serif;
+      text-align: right;
+      z-index: index 10;
+    }
+    /* #car{
+      width: 100px;
+      position: fixed;
+      top:100px;
+      /* animation: mymove 5s infinite; */
+    /* } */
+    /* @keyframes mymove {
+      from {left: 0px;}
+      to {left: 1000px;}
+    } */
+    /* https://www.w3schools.com/cssref/tryit.asp?filename=trycss3_animation */
+    iframe{
+      position:fixed;
+      width:60vw;
+      top:90px;
+      right:30vw;
+      border-radius:0px 100px 10px 0px;
+      z-index:10;
+    }
+    #story{
+      font-size:100px;
+      font-family:Tahoma (sans-serif);
+    }
+    </style>
+
+  </head>
+  <body>
+
+    <!-- <a href="https://www.baidu.com/s?ie=UTF-8&wd=%E9%9F%B3%E4%B9%90%E4%B8%8B%E8%BD%BD"><img src="flowers.jpeg"></a> -->
+    
+    <div id=streetspeaks>Street Speaks. 
+      <br>Our needs and history are reflected in the street, and it is connected to our sense of self. Not everyone experiences the street equally.  In fact, the layout of many streets is hard-wired to support some people and modes over others.  Empathetic Streets seeks to awaken people who the street privileges to the fact that that the streets support their needs - often at the expense of others with less privilege or at the expense of society’s shared values on the street.  The National Street Service helps ensure streets are welcoming, accepting, and forgiving by using experiments to targeted at people who the street privileges to spark moments of self-reflection and empathy for others.</div>
+    <!-- https://www.nationalstreetservice.org/street-stories -->
+    <div id=pricetagthecity>Price tag the city. 
+      <br>What is the true value of a parking spot? What about a bike rack, or a street tree? The Price Tag the City project puts dollar figures to objects we find in the street, and the hidden value of some things might surprise you.By exposing the costs and benefits of these familiar street features, we aim to start a conversation around better ways to allocate the resource of the street itself and the resources we spend to create and maintain it.</div>
+ <!-- https://www.nationalstreetservice.org/street-stories -->
+    <div id=question>What is the <span id=story>story</span> of your city?</div>
+
+    <!-- <iframe width="787" height="443" src="https://www.youtube.com/embed/RG5Fi-eCLbc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+    <!-- <audio controls src="175930.mp3"> -->
+   <img src="city.jpeg" id=city>
+
+  </body>
+</html>
