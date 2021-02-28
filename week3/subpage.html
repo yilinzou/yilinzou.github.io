@@ -1,0 +1,110 @@
+<html>
+    <head>
+      <title>Starry Night</title>
+      <link rel="shortcut icon" href="star.png">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+      	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+      	<script src="citylife.js"></script>
+
+
+
+
+    </head>
+
+    <style>
+
+      #titles{
+        position: absolute;
+        color:#FFFFFF;
+        font-size: 24px;
+        line-height: 18px;
+        left:100px;
+        top:100px;
+        letter-spacing:3px;
+        z-index:10;
+      }
+      #helpinstruction{
+        position: absolute;
+        left:1050px;
+        top:20px;
+        z-index=10;
+        text-align: left;
+        display: none;
+
+      }
+      #help{
+        position:absolute;
+        top:20px;
+        left:1000px;
+        z-index:10;
+        cursor:help;
+      }
+
+      #invisible{
+        position:absolute;
+        left:1300px;
+        top: 30px;
+        height: 18px;
+        z-index= 14;
+        cursor:pointer;
+      }
+
+      #man{
+        left:100px;
+        top: 100px;
+        z-index:14;
+      }
+
+      #dog{
+        left:300px;
+        top: 100px;
+        z-index:14;
+        display: none;
+      }
+
+
+
+
+      #city{
+        z-index=8;
+      }
+      body{
+
+        cursor:not-allowed;
+        cursor: url(https://ani.cursors-4u.net/games/gam-16/gam1567.cur), auto !important;}
+
+      }
+
+    </style>
+
+    <body>
+        <div id=titles>Explore the city</div>
+        <audio controls autoplay muted>
+        <source src="voice.wav" type="audio/wav">
+          Your browser does not support the audio element.
+        </audio>
+
+        <img src="city.jpg" alt="city" usemap="#city" id=city>
+
+        <img src="man1.png" alt="man" id=man>
+
+        <img src="dog.png" alt="dog" id=dog>
+
+        <map name="city">
+          <area shape="circle" coords="461,312,200" alt="citylife" href="citylife.js">
+        </map>
+        <div id=helpinstruction>drag the tools at the bottom to arrange your city; click on the center area to explore more</div>
+        <img src="eye.png" alt="eye" id=invisible>
+        <a href=help.html><img src="question.png" alt="question" id=help width="24" height="24"></a>
+
+
+
+        <!-- <img src="street.jpg" alt="street view" width="3000"> -->
+
+
+
+
+      </body>
+
+    </body>
+</html>
